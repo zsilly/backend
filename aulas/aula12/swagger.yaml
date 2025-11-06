@@ -1,0 +1,46 @@
+openapi: 3.1.1
+info:
+  title: Minha API
+  description: Projeto de uma API REST usando EspressJs e Mongoose.
+  version: 0.1.0
+servers:
+  - url: http://localhost:3000/ 
+    description: Ambiente de Desenvolimento
+tags: 
+  -tarefas
+paths:
+  - /tarefas:
+    get:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: array
+        500:
+          content:
+    post:
+      requestBody:
+      content:
+        aplication/json:
+          schema:
+            type: object
+      reponses:
+      201:
+        contesnt:
+          applicantion/json:
+            schema:
+              type: obejct
+      422:
+      contesnt:
+          applicantion/json:
+            schema:
+              type: obejct
+      500:
+        content:
+put:
+  parameters:
+  requestBody:
+  responses:
+    delete:
+components:
